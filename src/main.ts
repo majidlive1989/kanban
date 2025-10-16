@@ -6,7 +6,7 @@ const titleEl = document.getElementById("title") as HTMLInputElement;
 const todoCol = document.getElementById("todo") as HTMLDivElement;
 const descriptionEl = document.getElementById(
   "description"
-) as HTMLInputElement;
+) as HTMLTextAreaElement;
 const createEl = document.getElementById("create") as HTMLButtonElement;
 const todolistEl = document.getElementById("todolist") as HTMLSelectElement;
 

@@ -94,8 +94,8 @@
       <main
         class="col-start-2 col-end-3 row-start-2 row-end-3 gap-4 flex flex-row justify-around"
       >
-        <div id="todo" class="flex flex-col">
-          <div class="flex gap-4 items-center p-4">
+        <div id="todo" class="flex flex-col gap-3">
+          <div class="flex gap-3 items-center p-4">
             <div
               class="h-4 w-4 rounded-full"
               style="background: rgb(73, 196, 229)"
@@ -184,11 +184,12 @@
         type="text"
       />
       <label class="text-gray-600" for="title">Description</label>
-      <input
+      <textarea
         id="description"
         class="w-full border-2 border-gray-600 p-1 h-30"
         type="text"
-      />
+      >
+      </textarea>
       <label class="text-gray-600" for="title">Status</label>
       <select
         id="todolist"
