@@ -17,9 +17,11 @@
         <div class="rounded-4xl flex flex-row justify-center items-center px-3">
           <div class="p-7">
             <button
+              id="newtask"
               class="bg-[#635fc7] w-12 h-8 text-center font-bold text-sm rounded-3xl text-white p-2 md:h-12 md:w-40"
             >
-              + <span class="hidden md:inline-block">Add New Task</span>
+              +
+              <span class="hidden md:inline-block">Add New Task</span>
             </button>
           </div>
           <div>
@@ -100,7 +102,9 @@
             ></div>
             <span class="text-gray-400 text-xs tracking-widest">TODO ()</span>
           </div>
-          <div class="w-full bg-gray-300 p-5 rounded-2xl">
+          <div
+            class="w-full bg-gray-300 p-5 rounded-2xl hover:opacity-20 cursor-pointer shadow-md text-left"
+          >
             <h4 class="font-semibold">Build UI for onboarding flow</h4>
             <span
               role="button"
@@ -122,7 +126,9 @@
             ></div>
             <span class="text-gray-400 text-xs tracking-widest">Doing ()</span>
           </div>
-          <div class="w-full bg-gray-300 p-5 rounded-2xl">
+          <div
+            class="w-full bg-gray-300 p-5 rounded-2xl hover:opacity-20 cursor-pointer shadow-md text-left"
+          >
             <h4 class="font-semibold">Build UI for onboarding flow</h4>
             <span
               role="button"
@@ -144,7 +150,9 @@
             ></div>
             <span class="text-gray-400 text-xs tracking-widest">Done ()</span>
           </div>
-          <div class="w-full bg-gray-300 p-5 rounded-2xl">
+          <div
+            class="w-full bg-gray-300 p-5 rounded-2xl hover:opacity-20 cursor-pointer shadow-md text-left"
+          >
             <h4 class="font-semibold">Build UI for onboarding flow</h4>
             <span
               role="button"
@@ -160,7 +168,32 @@
         </div>
       </main>
     </section>
-    <div id="app"></div>
+    <div
+      id="modal"
+      class="fixed top-1/2 left-1/2 -translate-1/2 rounded-2xl bg-gray-400 w-[450px] h-[500px] flex flex-col gap-5 p-5 hidden"
+    >
+      <h2>Add Task</h2>
+      <label class="text-gray-600" for="title">Title</label>
+      <input class="w-full border-2 border-gray-600 p-1" type="text" />
+      <label class="text-gray-600" for="title">Description</label>
+      <input class="w-full border-2 border-gray-600 p-1 h-30" type="text" />
+      <label class="text-gray-600" for="title">Status</label>
+      <select
+        id="currency"
+        name="currency"
+        aria-label="Currency"
+        class="border-2 col-start-1 row-start-1 w-full appearance-none rounded-md py-1.5 pr-7 pl-3 text-base text-gray-500 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gray-600 sm:text-sm/6"
+      >
+        <option></option>
+        <option>To Do</option>
+        <option>Doing</option>
+        <option>Done</option>
+      </select>
+      <button class="bg-[#635fc7] p-3 rounded-3xl text-white" type="submit">
+        + Create Task
+      </button>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
