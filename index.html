@@ -37,13 +37,13 @@
         >
           <img class="h-full w-full" src="./src/img/logolight.svg" alt="" />
         </div>
-        <div class="flex flex-col">
-          <div class="font-bold text-gray-400 text-sm p-2">
+        <div class="flex flex-col gap-3">
+          <div class="font-bold text-gray-400 text-sm p-2 mb-4">
             <p>ALL BOARDS (3)</p>
           </div>
-          <div>
+          <div class="flex flex-col gap-3">
             <button
-              class="flex gap-1 font-semibold font-sans text-left w-10/12 hover:text-white hover:bg-purplelight text-xs md:text-base tracking-wide items-center break-words rounded-sm pl-2 md:pl-6 rounded-r-full h-12 hover:transition ease-out md:gap-6 bg-[#635fc7] text-white"
+              class="flex gap-1 font-semibold font-sans text-left w-10/12 hover:text-white hover:bg-purple-300 text-xs md:text-base tracking-wide items-center break-words rounded-sm pl-2 md:pl-6 rounded-r-full h-12 hover:transition ease-out md:gap-6 active: bg-[#635fc7] text-white"
             >
               <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -53,11 +53,111 @@
               </svg>
               <span>Platform Launch</span>
             </button>
+            <button
+              class="flex gap-1 font-semibold font-sans text-gray-400 text-left w-10/12 hover:text-white hover:bg-purple-300 text-xs md:text-base tracking-wide items-center break-words rounded-sm pl-2 md:pl-6 rounded-r-full h-12 hover:transition ease-out md:gap-6"
+            >
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
+                  fill="currentcolor"
+                ></path>
+              </svg>
+              <span>Marketing Plan</span>
+            </button>
+            <button
+              class="flex gap-1 font-semibold font-sans text-gray-400 text-left w-10/12 hover:text-white hover:bg-purple-300 text-xs md:text-base tracking-wide items-center break-words rounded-sm pl-2 md:pl-6 rounded-r-full h-12 hover:transition ease-out md:gap-6"
+            >
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
+                  fill="currentcolor"
+                ></path>
+              </svg>
+              <span>Roadmap</span>
+            </button>
+          </div>
+          <div>
+            <button class="text-[#635fc7] pl-6 flex gap-4">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
+                  fill="currentcolor"
+                ></path>
+              </svg>
+              <span class="font-semibold">+ Create New Board</span>
+            </button>
           </div>
         </div>
       </aside>
-      <main class="bg-blue-300 col-start-2 col-end-3 row-start-2 row-end-3">
-        main
+      <main
+        class="col-start-2 col-end-3 row-start-2 row-end-3 gap-4 flex flex-row justify-around"
+      >
+        <div class="flex flex-col">
+          <div class="flex gap-4 items-center p-4">
+            <div
+              class="h-4 w-4 rounded-full"
+              style="background: rgb(73, 196, 229)"
+            ></div>
+            <span class="text-gray-400 text-xs tracking-widest">TODO ()</span>
+          </div>
+          <div class="w-full bg-gray-300 p-5 rounded-2xl">
+            <h4 class="font-semibold">Build UI for onboarding flow</h4>
+            <span
+              role="button"
+              tabindex="0"
+              aria-disabled="false"
+              aria-roledescription="draggable"
+              aria-describedby="DndDescribedBy-0"
+              class="text-gray-400 p-2 text-xs font-bold"
+            >
+              0 of 1 subtasks</span
+            >
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex gap-4 items-center p-4">
+            <div
+              class="h-4 w-4 rounded-full"
+              style="background: rgb(132, 113, 242)"
+            ></div>
+            <span class="text-gray-400 text-xs tracking-widest">Doing ()</span>
+          </div>
+          <div class="w-full bg-gray-300 p-5 rounded-2xl">
+            <h4 class="font-semibold">Build UI for onboarding flow</h4>
+            <span
+              role="button"
+              tabindex="0"
+              aria-disabled="false"
+              aria-roledescription="draggable"
+              aria-describedby="DndDescribedBy-0"
+              class="text-gray-400 p-2 text-xs font-bold"
+            >
+              0 of 1 subtasks</span
+            >
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex gap-4 items-center p-4">
+            <div
+              class="h-4 w-4 rounded-full"
+              style="background: rgb(103, 226, 174)"
+            ></div>
+            <span class="text-gray-400 text-xs tracking-widest">Done ()</span>
+          </div>
+          <div class="w-full bg-gray-300 p-5 rounded-2xl">
+            <h4 class="font-semibold">Build UI for onboarding flow</h4>
+            <span
+              role="button"
+              tabindex="0"
+              aria-disabled="false"
+              aria-roledescription="draggable"
+              aria-describedby="DndDescribedBy-0"
+              class="text-gray-400 p-2 text-xs font-bold"
+            >
+              0 of 1 subtasks</span
+            >
+          </div>
+        </div>
       </main>
     </section>
     <div id="app"></div>
