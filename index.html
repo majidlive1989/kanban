@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kanban</title>
   </head>
-  <body class="h-screen">
+  <body class="h-screen bg-[#f4f7fd] dark:bg-[#20212c]">
     <section class="grid grid-cols-[3fr_9fr] grid-rows-[2fr_10fr] h-full">
       <header
         class="col-start-2 col-end-3 row-start-1 row-end-2 border-b-1 border-gray-600 flex flex-row justify-between items-center"
@@ -119,9 +119,12 @@
         </section>
       </aside>
       <main
-        class="col-start-2 col-end-3 row-start-2 row-end-3 gap-4 flex flex-row justify-around"
+        class="bg-[#f4f7fd] dark:bg-[#20212c] col-start-2 col-end-3 row-start-2 row-end-3 gap-4 flex flex-row justify-around"
       >
-        <div id="todo" class="flex flex-col gap-3">
+        <div
+          id="todo"
+          class="flex flex-col gap-3 bg-[#f4f7fd] dark:bg-[#20212c]"
+        >
           <div class="flex gap-3 items-center p-4">
             <div
               class="h-4 w-4 rounded-full"
@@ -131,7 +134,7 @@
           </div>
           <div
             id="todoitem"
-            class="w-full bg-gray-300 p-5 rounded-2xl hover:opacity-20 cursor-pointer shadow-md text-left"
+            class="w-full bg-[#f4f7fd] hover:bg-gray-300 dark:bg-[#2b2c37] dark:hover:bg-white p-5 rounded-2xl cursor-pointer shadow-md text-left"
           >
             <h4 class="font-semibold">Build UI for onboarding flow</h4>
             <span
@@ -155,7 +158,7 @@
             <span class="text-gray-400 text-xs tracking-widest">Doing ()</span>
           </div>
           <div
-            class="w-full bg-gray-300 p-5 rounded-2xl hover:opacity-20 cursor-pointer shadow-md text-left"
+            class="w-full bg-[#f4f7fd] hover:bg-gray-300 dark:bg-[#2b2c37] p-5 rounded-2xl cursor-pointer shadow-md text-left"
           >
             <h4 class="font-semibold">Build UI for onboarding flow</h4>
             <span
@@ -179,7 +182,7 @@
             <span class="text-gray-400 text-xs tracking-widest">Done ()</span>
           </div>
           <div
-            class="w-full bg-gray-300 p-5 rounded-2xl hover:opacity-20 cursor-pointer shadow-md text-left"
+            class="w-full bg-[#f4f7fd] hover:bg-gray-300 dark:bg-[#2b2c37] p-5 rounded-2xl cursor-pointer shadow-md text-left"
           >
             <h4 class="font-semibold">Build UI for onboarding flow</h4>
             <span

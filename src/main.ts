@@ -39,7 +39,7 @@ createEl.addEventListener("click", () => {
   if (todolistOption === "todo") {
     todoCol.innerHTML += ` 
      <div id="todoitem"
-            class="w-full bg-gray-300 p-5 rounded-2xl hover:opacity-20 cursor-pointer shadow-md text-left"
+            class="w-full  p-5 rounded-2xl hover:opacity-20 cursor-pointer shadow-md text-left bg-[#f4f7fd] dark:bg-[#2b2c37]"
           >
             <h4 class="font-semibold">${titleinput}</h4>
             <span
@@ -56,7 +56,7 @@ createEl.addEventListener("click", () => {
   } else if (todolistOption === "doing") {
     doingCol.innerHTML += ` 
     <div id="doingoitem"
-            class="w-full bg-gray-300 p-5 rounded-2xl hover:opacity-20 cursor-pointer shadow-md text-left"
+            class="w-full  p-5 rounded-2xl  bg-[#f4f7fd] dark:bg-[#2b2c37] hover:opacity-20 cursor-pointer shadow-md text-left"
           >
             <h4 class="font-semibold">${titleinput}</h4>
             <span
