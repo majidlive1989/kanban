@@ -5,3 +5,15 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+/* اضافه کردن این استایل‌ها به فایل style.css */
+.todo-item.active {
+  border: 2px solid #635fc7;
+}
+
+.todo-item {
+  transition: all 0.3s ease;
+}
+.move {
+  transform: translateX(30px);
+}
+@custom-variant dark (&:where(.dark, .dark *));
