@@ -17,3 +17,7 @@ body {
   transform: translateX(30px);
 }
 @custom-variant dark (&:where(.dark, .dark *));
+
+.hide {
+  display: none;
+}
